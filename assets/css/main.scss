@@ -1,0 +1,150 @@
+--- --- // Base styles
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+// Home page layout
+.home-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+// Profile section (left)
+.profile-section {
+    flex: 1;
+    background: linear-gradient(135deg, #000 10%, #10102a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-image {
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+// Content section (right)
+.content-section {
+    flex: 1;
+    padding: 60px;
+    background-color: #0a1a24;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-name {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #a0a0b8;
+    margin-bottom: 40px;
+}
+
+.title-area h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    color: #e2e2e6;
+}
+
+.bio-area {
+    margin-bottom: 60px;
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #a0a0b8;
+        max-width: 600px;
+    }
+}
+
+// Links section
+.links-container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.link-section {
+    margin-right: 60px;
+
+    h3 {
+        font-size: 0.85rem;
+        font-weight: 400;
+        color: #606080;
+        margin-bottom: 16px;
+        letter-spacing: 1px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #a0a0b8;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.2s;
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+
+.footer {
+    p {
+        font-size: 0.8rem;
+        color: #505060;
+    }
+}
+
+// Responsive design
+@media (max-width: 900px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .profile-section {
+        height: 40vh;
+    }
+
+    .content-section {
+        padding: 40px 30px;
+    }
+
+    .title-area h1 {
+        font-size: 3rem;
+    }
+
+    .links-container {
+        flex-direction: column;
+    }
+
+    .link-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
