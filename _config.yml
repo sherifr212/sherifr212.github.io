@@ -1,3 +1,27 @@
-nav:
-  - title: Blog
-    url: /blog/
+# _config.yml
+title: "Your Name"
+email: your.email@example.com
+description: >-
+  Your professional tagline
+baseurl: ""
+url: "https://yourusername.github.io"
+github_username: yourusername
+twitter_username: yourhandle
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .vscode/
+  - .github/
+  - Gemfile.lock
+  - .gitignore
+
+
+# Split navigation setup
+header_pages:
+  - about.md
+  - portfolio.md
+  - blog.md
+  - contact.md

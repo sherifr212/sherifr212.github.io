@@ -1,0 +1,12 @@
+<header class="py-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">{{ site.title }}</a>
+            <div class="d-flex">
+                {% for page in site.header_pages %}
+                <a class="nav-link mx-3" href="{{ page.url }}">{{ page.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </nav>
+</header>
