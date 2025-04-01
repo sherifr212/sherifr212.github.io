@@ -1,4 +1,4 @@
-.vscode/settings.json
-.sass-cache
-_site
+.vscode/
+.sass-cache/
+_site/
 Gemfile.lock
