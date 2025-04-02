@@ -10,10 +10,9 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
 end
 
-# Windows and JRuby compatibility
-platforms :mingw, :x64_mingw, :mswin, :jruby do
+# Windows compatibility
+platforms :mingw, :x64_mingw, :mswin do
   gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
+  gem "wdm", ">= 0.1.0"
 end
-
-gem "wdm", ">= 0.1.0", :platforms => [:mingw, :x64_mingw, :mswin]

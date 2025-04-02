@@ -5,56 +5,67 @@ layout: default
 <div class="home-container">
   <div class="profile-section">
     <div class="profile-image">
-      <!-- Replace with your image -->
-      <img src="/assets/images/profile.tiff" alt="Profile Image">
+      <img src="/assets/images/profile.jpg" alt="Profile Image">
     </div>
   </div>
 
   <div class="content-section">
-    <div class="header-name">YOUR NAME</div>
+    <div class="content-overlay">
+      <div class="header-name">SAFIA ABDALLA</div>
 
-    <div class="title-area">
-      <h1>Engineer. Writer.<br>Leader.</h1>
-    </div>
-
-    <div class="bio-area">
-      <p>I'm a software engineer on the .NET team at Microsoft focused on
-        building web frameworks and technologies. I'm passionate about
-        bringing people together to build great things, collaborating in the
-        open source ecosystem, and using storytelling to share
-        knowledge. Check out the links below to read my blog posts,
-        watch my conference talks and keynotes, and explore my open
-        source work.</p>
-    </div>
-
-    <div class="links-container">
-      <div class="link-section">
-        <h3>CONNECT</h3>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Email</a></li>
-        </ul>
+      <div class="title-area">
+        <h1>Engineer. Writer.<br>Leader.</h1>
       </div>
 
-      <div class="link-section">
-        <h3>SOCIAL</h3>
-        <ul>
-          <li><a href="#">Bluesky</a></li>
-          <li><a href="#">LinkedIn</a></li>
-        </ul>
+      <div class="bio-area">
+        <p>I'm a software engineer on the .NET team at Microsoft focused on
+          building web frameworks and technologies. I'm passionate about
+          bringing people together to build great things, collaborating in the
+          open source ecosystem, and using storytelling to share
+          knowledge. Check out the links below to read my blog posts,
+          watch my conference talks and keynotes, and explore my open
+          source work.</p>
       </div>
 
-      <div class="link-section">
-        <h3>LINKS</h3>
-        <ul>
-          <li><a href="#">Conference Talks</a></li>
-          <li><a href="#">GitHub</a></li>
-        </ul>
+      <div class="links-container">
+        <div class="link-section">
+          <h3>CONNECT</h3>
+          <ul>
+            <li><a href="#" class="modal-trigger" data-modal="blog">Blog</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="email">Email</a></li>
+          </ul>
+        </div>
+
+        <div class="link-section">
+          <h3>SOCIAL</h3>
+          <ul>
+            <li><a href="#" class="modal-trigger" data-modal="bluesky">Bluesky</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="link-section">
+          <h3>LINKS</h3>
+          <ul>
+            <li><a href="#" class="modal-trigger" data-modal="talks">Conference Talks</a></li>
+            <li><a href="#" class="modal-trigger" data-modal="github">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p> 2024 Safia Abdalla</p>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="footer">
-      <p>© 2025 Your Name</p>
+<!-- Modal Template -->
+<div class="modal-container">
+  <div class="modal">
+    <div class="modal-content">
+      <h2>Content Title</h2>
+      <p>Modal content goes here...</p>
     </div>
   </div>
 </div>

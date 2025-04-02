@@ -1,13 +1,10 @@
 # _config.yml
-title: Your Name
+title: Sherif Refaat
 email: your.email@example.com
 description: >-
-  Your professional description
+  Engineer, Leader, Mentor
 baseurl: ""
 url: ""
-twitter_username: yourtwitter
-github_username:  yourgithub
-linkedin_username: yourlinkedin
 
 # Build settings
 markdown: kramdown
@@ -17,6 +14,21 @@ plugins:
 exclude:
   - .vscode/
   - .github/
+  - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
   - .gitignore
 
+sass:
+  sass_dir: sass
+  style: compressed
+
+# Ensure the assets folder is included in the build
+include:
+  - assets
+
+twitter_username: yourtwitter
+github_username:  yourgithub
+linkedin_username: yourlinkedin
