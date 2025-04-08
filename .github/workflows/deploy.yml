@@ -18,7 +18,3 @@ jobs:
       - run: gem install jekyll bundler
       
       - run: bundle exec jekyll build --destination ./_site
-      
-      - uses: actions/upload-pages-artifact@v2
-      
-      - uses: actions/deploy-pages@v2
